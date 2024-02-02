@@ -8,8 +8,7 @@
 import Foundation
 import Data
 
-public class HTTPStatusCodeHandler {
-    
+public struct HTTPStatusCodeHandler {
     static func catchError(from response: HTTPURLResponse, with data: Data) -> HTTPClientError? {
         switch response.statusCode {
         case HTTPStatusCode.informationResponseRange:

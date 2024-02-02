@@ -10,7 +10,7 @@ import Presentation
 
 public struct CharactersFinderView: View {
     @State var characterName: String = ""
-    @ObservedObject private var viewModel: CharactersFinderViewModel
+    @State private var viewModel: CharactersFinderViewModel
     
     public init(viewModel: CharactersFinderViewModel) {
         self.viewModel = viewModel

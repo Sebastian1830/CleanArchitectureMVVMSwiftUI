@@ -16,7 +16,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(name: "Data", path: "../Data"),
+        .package(name: "Data", path: "../Data")
     ],
     targets: [
         .target(

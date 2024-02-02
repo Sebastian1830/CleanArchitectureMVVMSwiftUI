@@ -1,5 +1,5 @@
 //
-//  NetworkingComposition.swift
+//  NetworkingFactory.swift
 //  CleanArchitectureMvvm
 //
 //  Created by Sebastian Soto Varas on 29/01/24.
@@ -9,7 +9,7 @@ import Foundation
 import Data
 import Infraestructure
 
-struct NetworkingComposition {
+struct NetworkingFactory {
     static func setupNetworkingLayer() -> HTTPClient {
         let requestMaker = HTTPRequestMaker(
             host: "https://gateway.marvel.com:443/v1/public",

@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import Observation
 import Domain
 
-public class CharactersFinderViewModel: ObservableObject {
-    @Published public var characters: [CharacterItem] = []
-    @Published public var isLoading: Bool?
-    @Published public var messageError: String?
+@Observable
+public class CharactersFinderViewModel {
+    public var characters: [CharacterItem] = []
+    public var isLoading: Bool?
+    public var messageError: String?
     
     private let charactersUseCase: SearchCharactersType
     
