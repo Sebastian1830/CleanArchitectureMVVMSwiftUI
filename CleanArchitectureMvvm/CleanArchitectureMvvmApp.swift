@@ -6,12 +6,10 @@
 //
 
 import SwiftUI
-import Data
 import SwiftData
 
 @main
 struct CleanArchitectureMvvmApp: App {
-    let marvelNetwork = NetworkingFactory.setupNetworkingLayer()
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -27,7 +25,7 @@ struct CleanArchitectureMvvmApp: App {
 
     var body: some Scene {
         WindowGroup {
-            CharacterFinderFactory.create(client: marvelNetwork)
+            CharacterFinderFactory.create()
         }
         .modelContainer(sharedModelContainer)
     }
